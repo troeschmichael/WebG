@@ -1,0 +1,31 @@
+Namespace Aufgabe 1
+
+
+1) Aus welchen zwei Teilen setzt sich der qualifizierte Name (engl. Qualified Name oder QName)
+zusammen und was ist die Bedeutung dieser Teile?
+
+QName bedeutet Qualified Name und definiert die Gültigkeit für Elemente und Attribute. 
+Elemente werden mit einem spezifischen Präfix, welches ein Abbild einer langen URI ist,
+versehen, diese definieren die Gültigkeit des Namespace.
+
+Als Beispiel:
+<fh:titel> fh ist das Präfix und titel der Elementname, wobei der Teil rechts des : local name heisst.
+
+
+2) Welche Probleme können beim Einsatz von Namensräumen mit einer DTD auftreten?
+
+Namensräume gibt es nicht in DTDs. Die Elemente und Attribute müssen vollständig,
+mit Präfix, in der DTD deklariert werden.
+----- WIKIPEIDA ZITAT -----
+Es ist sehr umständlich und zum Teil unmöglich, z. B. bei beliebigen Präfixen oder in XSLT, 
+eine allgemein gültige DTD für eine XML-Sprache oder ein Dokument aufzustellen.
+Ein Versuch, dies für XHTML, MathML und SVG in einer Datei dennoch zu tun, 
+findet man beim W3-Konsortium.[4] Dort wird mittels im Nachhinein definierbarer Entitäten die Möglichkeit geschaffen,
+Präfixe für jedes Dokument neu zu bestimmen.
+-------  ENDE -------
+
+
+3) Was für ein Dokument muss am Ort, der durch den Namensraum-URI identifiziert ist, stehen?
+
+Die URI welche für den Namespace definiert wird ist lediglich ein Eindeutiger Name der von niemand anderem verwendet wird.
+An der Stelle wo die URI zeigt muss nichts sein, die URI kann auch fiktiv sein und es ist daher keine Internetverbindung nötig.
