@@ -1,0 +1,41 @@
+<!-- DTD created at Thu Aug 25 10:23:35 CEST 2016 with EditiX XML Editor (http://www.editix.com). Please insert an encoding attribute header for converting any DTD  -->
+
+
+
+<!ELEMENT  daten (module+, dozierende+, studierende+)
+
+	module (modul*)
+
+	modul (name, kürzel, studiengang)
+
+	name (#PCDATA)
+
+	kürzel (#PCDATA)
+
+	studiengang (#PCDATA)
+	dozierende (dozent*)
+	studierende (student*)
+	
+
+	dozent (name, vorname+, adresse+, geburtsdatum, geschlecht, ahv-nummer, module)
+
+	module (modul*)
+
+	modul (#PCDATA)
+
+	student (name, vorname+, adresse+, geburtsdatum, geschlecht, ahv-nummer, modulprüfungen)
+
+	modulprüfungen (modulprüfung)
+
+	modulprüfung (modul, note, datum)
+
+	note (#PCDATA)
+
+	datum (#PCDATA)
+
+>
+
+<!ATTLIST daten
+	mid ID #REQUIRED
+	did ID #REQUIRED
+>

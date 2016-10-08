@@ -1,0 +1,7 @@
+<!ELEMENT contactlist (contact+)>
+<!ELEMENT contact (name, address?, phone+, mail)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT mail (#PCDATA)>
+<!ATTLIST phone type (mobile|private|office|fax) #REQUIRED>

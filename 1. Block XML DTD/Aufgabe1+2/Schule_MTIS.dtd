@@ -1,0 +1,37 @@
+<!-- Schule -->
+<!ELEMENT schule (sgList, modulList, dozList, schuelerList)>
+
+<!-- Studiengangsliste -->
+<!ELEMENT sgList (studiengang+)>
+<!ELEMENT studiengang (#PCDATA)>
+<!ATTLIST studiengang sgid ID #REQUIRED>
+
+
+<!-- Modulliste -->
+<!ELEMENT modulList (modul+)>
+<!ELEMENT modul (name, kuerzel)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT kuerzel (#PCDATA)>
+<!ATTLIST modul
+        mid ID #REQUIRED
+        sgid IDREFS #REQUIRED>
+
+<!-- Dozenten -->
+<!ELEMENT dozList (dozent+)>
+<!ELEMENT dozent (name, vorName, adresse, geburtstag, geschlecht, ahv)>
+<!ELEMENT vorName (#PCDATA)>
+<!ELEMENT adresse (#PCDATA)>
+<!ELEMENT geburtstag (#PCDATA)>
+<!ELEMENT geschlecht (#PCDATA)>
+<!ELEMENT ahv (#PCDATA)>
+<!ATTLIST dozent
+                mid IDREFS #REQUIRED>
+
+<!-- Schülerliste -->
+<!ELEMENT schuelerList (schueler+)>
+<!ELEMENT schueler (name, vorName, adresse, geburtstag, geschlecht, ahv, prüfungsList)>
+<!ELEMENT prüfungsList (prüfung+)>
+<!ELEMENT prüfung (note, datum)>
+<!ELEMENT note (#PCDATA)>
+<!ELEMENT datum (#PCDATA)>
+<!ATTLIST prüfung mid IDREF #REQUIRED>

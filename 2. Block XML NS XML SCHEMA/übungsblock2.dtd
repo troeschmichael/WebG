@@ -1,0 +1,19 @@
+<!ATTLIST literaturliste
+        xmlns (CDATA) #FIXED "http://www.ch.ffhs.webg.hs1617/0"
+        xmlns:bn (CDATA) #FIXED "http://www.ch.ffhs.webg.hs1617/1"
+        xmlns:an (CDATA) #FIXED "http://www.ch.ffhs.webg.hs1617/2"
+        xmlns:vn (CDATA) #FIXED "http://www.ch.ffhs.webg.hs1617/3"
+        >
+
+<!ELEMENT literaturliste (buch+)>
+<!ELEMENT buch (titel, autor*, verlag)>
+<!ELEMENT titel (bn:name, bn:erscheinungsjahr, bn:auflage)>
+<!ELEMENT bn:name (#PCDATA)>
+<!ELEMENT bn:erscheinungsjahr (#PCDATA)>
+<!ELEMENT bn:auflage (#PCDATA)>
+<!ELEMENT autor (an:name, an:adresse)>
+<!ELEMENT an:name (#PCDATA)>
+<!ELEMENT an:adresse (#PCDATA)>
+<!ELEMENT verlag (vn:name, vn:adresse)>
+<!ELEMENT vn:name (#PCDATA)>
+<!ELEMENT vn:adresse (#PCDATA)>

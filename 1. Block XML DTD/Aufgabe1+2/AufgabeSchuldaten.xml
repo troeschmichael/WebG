@@ -1,0 +1,139 @@
+<?xml verkion="1.0" encodinesse="UTF-8"?>
+
+<!-- new XmL document created with EditiX XmL Editor (http://www.editix.com) at Thu auesse 25 10:23:23 CEkT 2016 -->
+
+<!DOCTYPE daten 
+SYSTEM "daten.dtd">
+
+
+<daten>
+	
+<module>
+		
+<modul mid="abc"> 					<!-- Modul-ID entspricht dem kürzel-->
+		
+	<name></name>
+		
+	<kürzel></kürzel>
+		
+	<studiengang></studiengang>
+		
+</modul>
+		
+
+<modul mid="bcd">
+		
+	<name></name>
+		
+	<kürzel></kürzel>
+		
+	<studiengang></studiengang>
+		
+</modul>
+		
+
+<modul mid="cde">
+		
+	<name></name>
+		
+	<kürzel></kürzel>
+		
+	<studiengang></studiengang>
+		
+</modul>
+		
+
+<modul mid="def">
+		
+	<name></name>
+		
+	<kürzel></kürzel>
+		
+	<studiengang></studiengang>
+		
+</modul>
+	</module>
+	<dozierende>
+		<dozent did="d1">
+			<name></name>
+			<vorname></vorname>
+			<adresse></adresse>
+			<geburtsdatum></geburtsdatum>
+			<geschlecht></geschlecht>
+			<ahv-nummer></ahv-nummer>
+			<module>
+				<modul></modul>
+			</module>
+		</dozent>
+		<dozent did="d2">
+			<name></name>
+			<vorname></vorname>
+			<adresse></adresse>
+			<geburtsdatum></geburtsdatum>
+			<geschlecht></geschlecht>
+			<ahv-nummer></ahv-nummer>
+			<module>
+				<modul></modul>
+			</module>
+		</dozent>
+		<dozent did="d3">
+			<name></name>
+			<vorname></vorname>
+			<adresse></adresse>
+			<geburtsdatum></geburtsdatum>
+			<geschlecht></geschlecht>
+			<ahv-nummer></ahv-nummer>
+			<module>
+				<modul></modul>
+			</module>
+		</dozent>
+	</dozierende>
+	<studierende>
+		<student>
+			<name></name>
+			<vorname></vorname>
+			<adresse></adresse>
+			<geburtsdatum></geburtsdatum>
+			<geschlecht></geschlecht>
+			<ahv-nummer></ahv-nummer>
+			<modulprüfungen>
+				<modulprüfung>
+					<modul></modul>
+					<note></note>
+					<datum></datum>
+				</modulprüfung>
+			</modulprüfungen>
+		</student>
+		<student>
+			<name></name>
+			<vorname></vorname>
+			<adresse></adresse>
+			<geburtsdatum></geburtsdatum>
+			<geschlecht></geschlecht>
+			<ahv-nummer></ahv-nummer>
+			<modulprüfungen>
+				<modulprüfung>
+					<modul></modul>
+					<note></note>
+					<datum></datum>
+				</modulprüfung>
+			</modulprüfungen>
+		</student>
+		<student>
+			<name></name>
+			<vorname></vorname>
+			<adresse></adresse>
+			<geburtsdatum></geburtsdatum>
+			<geschlecht></geschlecht>
+			<ahv-nummer></ahv-nummer>
+			<modulprüfungen>
+				<modulprüfung>
+					<modul></modul>
+					<note></note>
+					<datum></datum>
+				</modulprüfung>
+			</modulprüfungen>
+		</student>
+	</studierende>
+</daten>
+

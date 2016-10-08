@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<!DOCTYPE email [
+        <!ELEMENT email (absender, adressat+, betreff, inhalt, sendedatum)>
+        <!ELEMENT absender (#PCDATA)>
+        <!ELEMENT adressat (#PCDATA)>
+        <!ELEMENT betreff (#PCDATA)>
+        <!ELEMENT inhalt (#PCDATA)>
+        <!ELEMENT sendedatum (#PCDATA)>
+        ]>
+
+
+<email>
+    <absender>petermüller@petermüller.ch</absender>
+    <adressat>hansmeier@hansmeier.ch</adressat>
+    <adressat>hansmüller@hansmüller.ch</adressat>
+    <betreff>hallo</betreff>
+    <inhalt>hallo</inhalt>
+    <sendedatum>01.01.2016</sendedatum>
+</email>

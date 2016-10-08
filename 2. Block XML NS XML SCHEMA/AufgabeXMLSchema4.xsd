@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="kapitel">
+        <xs:complexType mixed="true">
+            <xs:sequence minOccurs="1" maxOccurs="unbounded">
+                <xs:element name="em" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
+
+    <!--XML-Instanz
+    <kapitel>
+    <paragraf>Dieser Paragraf kann <em>hervorgehobenen Text</em> enthalten oder nicht.</paragraf>
+    <paragraf>...und sich beliebig oft wiederholen.></paragraf>
+    </kapitel>
+    -->

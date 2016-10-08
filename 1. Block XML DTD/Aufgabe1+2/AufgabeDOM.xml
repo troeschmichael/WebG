@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<html> 
+	<head> 
+		<meta name="keywords" content="dom,tree,example"/> 
+		<title>Titel</title> 
+		<style type="text/css"> </style> 
+	</head> 
+	<body> 
+		<h1>Ueberschrift</h1> 
+		<div id="content"> 
+			<ul> 
+				<li>Eins</li> 
+				<li>Zwei</li> 
+				<li>Drei</li> 
+			</ul> 
+			<p>Paragraph mit <em>ganz wichtigem</em> Text</p> 
+		</div> 
+	</body> 
+</html> 
+
+

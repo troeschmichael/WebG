@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE schule SYSTEM "school.dtd">
+<schule>
+    <studiengang>
+        <modul vid="v1" did="d1">
+            <name></name>
+            <kuerzel></kuerzel>
+        </modul>
+    </studiengang>
+    <dozList>
+        <dozent did="d1">
+            <name></name>
+            <vorName></vorName>
+            <adresse></adresse>
+            <geburtstag></geburtstag>
+            <geschlecht></geschlecht>
+            <ahv></ahv>
+        </dozent>
+    </dozList>
+    <schuelerList>
+        <schueler>
+            <name></name>
+            <vorName></vorName>
+            <adresse></adresse>
+            <geburtstag></geburtstag>
+            <geschlecht></geschlecht>
+            <ahv></ahv>
+        </schueler>
+    </schuelerList>
+</schule>

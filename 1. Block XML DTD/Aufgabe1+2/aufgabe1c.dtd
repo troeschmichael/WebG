@@ -1,0 +1,9 @@
+<!ELEMENT bank (person+)>
+<!ELEMENT person (name, vorname, konto+)>
+<!ELEMENT konto (kontonummer, guthaben)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT vorname (#PCDATA)>
+<!ELEMENT kontonummer (#PCDATA)>
+<!ELEMENT guthaben (#PCDATA)>
+<!ATTLIST person pid ID #REQUIRED>
+<!ATTLIST konto pid IDREF #REQUIRED>

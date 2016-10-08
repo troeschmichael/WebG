@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<!DOCTYPE cdslg [
+    <!ELEMENT cdslg (cd+)>
+    <!ELEMENT cd (interpretor+, titel, verlag, datum, preis)>
+    <!ELEMENT interpretor (#PCDATA)>
+    <!ELEMENT titel (#PCDATA)>
+    <!ELEMENT verlag (#PCDATA)>
+    <!ELEMENT datum (#PCDATA)>
+    <!ELEMENT preis (#PCDATA)>
+    <!ATTLIST cd cid ID #REQUIRED>
+    <!ATTLIST interpretor cid IDREF #REQUIRED>
+    <!ATTLIST titel cid IDREF #REQUIRED>
+    <!ATTLIST verlag cid IDREF #REQUIRED>
+    <!ATTLIST datum cid IDREF #REQUIRED>
+    <!ATTLIST preis cid IDREF #REQUIRED>
+        ]>
+
+<cdslg>
+    <cd cid="c1">
+        <interpretor cid="c1">ab</interpretor>
+        <titel cid="c1">abab</titel>
+        <verlag cid="c1">ab-verlag</verlag>
+        <datum cid="c1">ab-datum</datum>
+        <preis cid="c1">ab-preis</preis>
+    </cd>
+    <cd cid="c2">
+        <interpretor cid="c2">ab</interpretor>
+        <titel cid="c2">abab</titel>
+        <verlag cid="c2">ab-verlag</verlag>
+        <datum cid="c2">ab-datum</datum>
+        <preis cid="c2">ab-preis</preis>
+    </cd>
+    <cd cid="c3">
+        <interpretor cid="c3">ab</interpretor>
+        <titel cid="c3">abab</titel>
+        <verlag cid="c3">ab-verlag</verlag>
+        <datum cid="c3">ab-datum</datum>
+        <preis cid="c3">ab-preis</preis>
+    </cd>
+
+
+</cdslg>

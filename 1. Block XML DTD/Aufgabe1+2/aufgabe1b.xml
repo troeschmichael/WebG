@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE person SYSTEM "aufgabe1b.dtd" >
+
+<person pid="p1">
+    <name>Meier</name>
+    <vorname>Hans</vorname>
+    <konto pid="p1">
+        <kontonummer>1234</kontonummer>
+        <guthaben>1000</guthaben>
+    </konto>
+    <konto pid="p1">
+        <kontonummer>4321</kontonummer>
+        <guthaben>5000</guthaben>
+    </konto>
+</person>
