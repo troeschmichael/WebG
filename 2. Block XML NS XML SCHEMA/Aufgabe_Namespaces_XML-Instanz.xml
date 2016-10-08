@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<schuldaten
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:sd="http://www.mydevice.ch"
+        xmlns="http://www.schuldaten.ch"
+        xsi:schemaLocation="http://www.schuldaten.ch file:Aufgabe_Namespaces_XML-Schema.xsd"
+>
+    <Address>
+        <Name>Laboratory for Web Science</Name>
+        <Street>Überlandstr. 12</Street>
+        <City State="VS">Brig</City>
+        <Country>Schweiz</Country>
+        <PostalCode>CH-3900</PostalCode>
+    </Address>
+    <sd:Device>
+        <sd:Name Type="Server">lws.ffhs.ch</sd:Name>
+        <sd:Address>123.45.67.8</sd:Address>
+    </sd:Device>
+</schuldaten>

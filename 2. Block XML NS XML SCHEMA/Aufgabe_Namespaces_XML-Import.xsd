@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xs:schema
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://www.mydevice.ch"
+    elementFormDefault="qualified"
+    xmlns:sd="http://www.mydevice.ch"
+>
+    <xs:element name="Device">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="Name">
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                                <xs:attribute name="Type" type="xs:string"/>
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Address" type="xs:string"/>
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

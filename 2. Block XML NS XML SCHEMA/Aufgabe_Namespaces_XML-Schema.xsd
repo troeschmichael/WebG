@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.schuldaten.ch"
+           elementFormDefault="qualified"
+           xmlns="http://www.schuldaten.ch"
+           xmlns:sd="http://www.mydevice.ch"
+>
+    <xs:import namespace="http://www.mydevice.ch" schemaLocation="Aufgabe_Namespaces_XML-Import.xsd"/>
+    <xs:element name="schuldaten">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="Address">
+                    <xs:complexType>
+                        <xs:all>
+                            <xs:element name="Name" type="xs:string"/>
+                            <xs:element name="Street" type="xs:string"/>
+                            <xs:element name="City">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="State" type="xs:string"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Country" type="xs:string"/>
+                            <xs:element name="PostalCode" type="xs:string"/>
+                        </xs:all>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element ref="sd:Device"/>
+            </xs:all>
+        </complexType>
+    </xs:element>
+
+
+
+</xs:schema>
+
+
